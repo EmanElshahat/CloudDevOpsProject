@@ -60,24 +60,24 @@ CMD ["python", "app.py"]
 ```bash
 docker build -t app -f Docker/Dockerfile .
 ```
-![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/53b295a0594c4949244db0571da394699961c129/Attachments/screenshots/build-image.png)
 
 - Verify **Docker Images** :
 - 
-  ![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+  ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/53b295a0594c4949244db0571da394699961c129/Attachments/screenshots/docker-images.png)
 
 ### ▶️ Run Docker Container
 ```bash
 docker run -d -p 5000:5000 --name f-app app
 ```
-![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/53b295a0594c4949244db0571da394699961c129/Attachments/screenshots/run-con.png)
 
 ### 🌐 Verify Application
 Once the container is running, the application can be accessed via:
 ```bash
 http://localhost:5000
 ```
-![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/53b295a0594c4949244db0571da394699961c129/Attachments/screenshots/http.png)
 
 ---
 
