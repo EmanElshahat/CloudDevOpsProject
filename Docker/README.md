@@ -63,7 +63,7 @@ docker build -t app -f Docker/Dockerfile .
 ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/53b295a0594c4949244db0571da394699961c129/Attachments/screenshots/build-image.png)
 
 - Verify **Docker Images** :
-- 
+
   ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/53b295a0594c4949244db0571da394699961c129/Attachments/screenshots/docker-images.png)
 
 ### ▶️ Run Docker Container
