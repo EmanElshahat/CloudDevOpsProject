@@ -2,7 +2,7 @@
 
 ## 📂 Navigation
 - [Dockerfile](./Dockerfile)
-- [Application Source Code ](CloudDevOpsProject/App/)
+- [Application Source Code ](CloudDevOpsProject/App)
 
 ---
 
