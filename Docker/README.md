@@ -37,4 +37,59 @@ The application runs on port 5000 and is designed to be portable across differen
 
 ---
 
+## 🧭 Steps
+### 🐳 Dockerfile
 
+- [Dockerfile](./Dockerfile)
+
+```bash
+FROM python:3.9-slim AS builder
+WORKDIR /app
+COPY App/requirements.txt .
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
+
+FROM python:3.9-slim
+WORKDIR /app
+COPY --from=builder /install /usr/local
+COPY App/ .
+EXPOSE 5000
+CMD ["python", "app.py"]
+```
+### ▶️ Build Docker Image
+
+```bash
+docker build -t app -f Docker/Dockerfile .
+```
+![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+
+- Verify **Docker Images** :
+- 
+  ![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+
+### ▶️ Run Docker Container
+```bash
+docker run -d -p 5000:5000 --name f-app app
+```
+![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+
+### 🌐 Verify Application
+Once the container is running, the application can be accessed via:
+```bash
+http://localhost:5000
+```
+![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+
+---
+
+## 📦 Deliverables
+- Multi-stage Dockerfile
+- Optimized Docker image
+- Flask application running inside a container
+
+---
+
+## 🚀 Conclusion
+By containerizing the application with Docker:
+ - The application becomes portable and consistent across environments
+ - It is optimized for performance and security
+ - It is ready for integration with Jenkins CI and deployment to Kubernetes in the next stages of the project
