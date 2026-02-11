@@ -19,12 +19,12 @@ A dedicated namespace named **ivolve** is created to logically isolate all proje
 
 ### 📦 Deployment
 The application is deployed using a Kubernetes **Deployment** resource.
-**Deployment features:**
+- **Deployment features:**
  - Runs multiple replicas of the application
  - Ensures high availability
  - Automatically replaces failed pods
  - Manages rolling updates
-**Key configuration:**
+- **Key configuration:**
  - Replicas: `2`
  - Container image: `app`
  - Application port: `5000`
