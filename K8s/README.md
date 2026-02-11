@@ -14,6 +14,7 @@ The application is deployed inside a dedicated namespace to maintain isolation a
 ## 🧱 Kubernetes Components
 ### 📌 Namespace
 A dedicated namespace named **ivolve** is created to logically isolate all project resources within the cluster.
+
 **Benefits:** Resource isolation, Better organization, Easier management and monitoring.
 
 
