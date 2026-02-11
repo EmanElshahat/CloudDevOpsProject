@@ -31,13 +31,13 @@ The application is deployed using a Kubernetes **Deployment** resource.
 
 ### 🌐 Service
 A Kubernetes **Service** of type `NodePort` is used to expose the application outside the cluster.
-**Service responsibilities:**
- - Provides a stable access point for the application
- - Load balances traffic across all running pods
- - Maps internal container port to an external node port
-**Port mapping:**
- - Container Port: `5000`
- - NodePort: `30007`
+- **Service responsibilities:**
+  - Provides a stable access point for the application
+  - Load balances traffic across all running pods
+  - Maps internal container port to an external node port
+- **Port mapping:**
+  - Container Port: `5000`
+  - NodePort: `30007`
 ---
 
 ## Steps
