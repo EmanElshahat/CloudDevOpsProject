@@ -48,6 +48,42 @@ kubectl apply -f K8s/namespace.yaml
 kubectl apply -f K8s/deployment.yaml
 kubectl apply -f K8s/service.yaml
 ```
-![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+![Apply](https://github.com/EmanElshahat/CloudDevOpsProject/blob/6b3856edfa280c0bf59d75aeeaf691049403b937/Attachments/screenshots/apply-k8s.png)
+
+### 🔍 Verify Deployment Status
+Check the status of all resources inside the namespace:
+```bash
+kubectl get all -n ivolve
+```
+![Verify](https://github.com/EmanElshahat/CloudDevOpsProject/blob/6b3856edfa280c0bf59d75aeeaf691049403b937/Attachments/screenshots/verify-k8s.png)
+
+### 🌍 Access the Application
+If running on Minikube, expose the service using:
+```bash
+minikube service app-service -n ivolve
+```
+![Access](https://github.com/EmanElshahat/CloudDevOpsProject/blob/6b3856edfa280c0bf59d75aeeaf691049403b937/Attachments/screenshots/access-k8s.png)
+
+- Or access it directly via:
+```bash
+http://192.168.49.2:30007
+```
+![http](https://github.com/EmanElshahat/CloudDevOpsProject/blob/6b3856edfa280c0bf59d75aeeaf691049403b937/Attachments/screenshots/http-k8s.png)
+
+---
+
+## 📦 Deliverables
+- Kubernetes Namespace configuration
+- Deployment manifest with multiple replicas
+- NodePort Service for external access
+- Fully running application inside Kubernetes
+
+---
 
 
+## 🚀 Conclusion
+By deploying the application on Kubernetes:
+ - The application becomes highly available
+ - Container orchestration is fully automated
+ - The system is ready for CI/CD integration with Jenkins
+ - The deployment is prepared for GitOps-based delivery using ArgoCD in later stages
