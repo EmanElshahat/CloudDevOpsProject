@@ -91,7 +91,7 @@ systemctl enable docker
 usermod -aG docker ec2-user
 
 docker pull emanabosamra/app:latest
-docker run -d -p 80:5000 emanabosamra/app:latest
+docker run -d -p 8000:5000 emanabosamra/app:latest
 EOF
 
   tags = {
