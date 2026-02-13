@@ -35,16 +35,16 @@ Configured to direct outbound traffic `0.0.0.0/0` to the Internet Gateway, enabl
 
 ### 🔒 Security Group
 A Security Group is configured to control inbound and outbound traffic.
-**Inbound rules:**
-- SSH `22` → for remote access
-- HTTP App Port `8000` → to access the Flask application
+- **Inbound rules:**
+ - SSH `22` → for remote access
+ - HTTP App Port `8000` → to access the Flask application
 
 ### 🖥️ EC2 Instance
 An EC2 instance is provisioned to host the application.
-**Instance configuration:**
-- AMI: Amazon Linux
-- Instance type: t2.micro
-- Public IP: Enabled
+- **Instance configuration:**
+ - AMI: Amazon Linux
+ - Instance type: t2.micro
+ - Public IP: Enabled
 
 ---
 ## 🐳 Docker Deployment
