@@ -7,6 +7,7 @@
 ---
 ## 🎯 Overview
 This directory contains all Terraform configurations required to provision the infrastructure on AWS and deploy the Flask application inside a Docker container on an EC2 instance.
+
 Terraform is used to automate infrastructure provisioning, ensure consistency, and enable Infrastructure as Code (IaC) practices.
 The application is deployed on an EC2 instance and exposed to the internet through a public IP address.
 
@@ -17,9 +18,9 @@ The application is deployed on an EC2 instance and exposed to the internet throu
 ### ☁️ VPC
 A **custom Virtual Private Cloud (VPC)** is created to isolate the project resources.
 **Benefits:**
- - Network isolation
- - Controlled IP addressing
- - Secure communication
+- Network isolation
+- Controlled IP addressing
+- Secure communication
 
 ### 🌐 Internet Gateway
 Enables internet connectivity for the VPC, allowing resources within the public subnet to communicate with external networks and access the internet.
@@ -35,15 +36,15 @@ Configured to direct outbound traffic `0.0.0.0/0` to the Internet Gateway, enabl
 ### 🔒 Security Group
 A Security Group is configured to control inbound and outbound traffic.
 **Inbound rules:**
- - SSH `22` → for remote access
- - HTTP App Port `8000` → to access the Flask application
+- SSH `22` → for remote access
+- HTTP App Port `8000` → to access the Flask application
 
 ### 🖥️ EC2 Instance
 An EC2 instance is provisioned to host the application.
 **Instance configuration:**
- - AMI: Amazon Linux
- - Instance type: t2.micro
- - Public IP: Enabled
+- AMI: Amazon Linux
+- Instance type: t2.micro
+- Public IP: Enabled
 
 ---
 ## 🐳 Docker Deployment
@@ -54,8 +55,8 @@ docker pull emanabosamra/app:latest
 docker run -d -p 8000:5000 emanabosamra/app:latest
 ```
 **Port mapping:**
- - Container Port: `5000`
- - EC2 Public Port: `8000`
+- Container Port: `5000`
+- EC2 Public Port: `8000`
 
 ---
 ## ▶️ Terraform Commands
@@ -100,7 +101,7 @@ http://44.222.155.171:8000
 
 ## 🚀 Conclusion
 By provisioning infrastructure with Terraform:
- - Infrastructure becomes reproducible
- - Deployment is automated
- - Flask app successfully exposed to the internet
+- Infrastructure becomes reproducible
+- Deployment is automated
+- Flask app successfully exposed to the internet
 This demonstrates Infrastructure as Code and containerized deployment on **AWS**.
