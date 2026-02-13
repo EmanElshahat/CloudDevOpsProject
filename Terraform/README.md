@@ -18,9 +18,9 @@ The application is deployed on an EC2 instance and exposed to the internet throu
 ### ☁️ VPC
 A **custom Virtual Private Cloud (VPC)** is created to isolate the project resources.
 **Benefits:**
-- Network isolation
-- Controlled IP addressing
-- Secure communication
+ - Network isolation
+ - Controlled IP addressing
+ - Secure communication
 
 ### 🌐 Internet Gateway
 Enables internet connectivity for the VPC, allowing resources within the public subnet to communicate with external networks and access the internet.
