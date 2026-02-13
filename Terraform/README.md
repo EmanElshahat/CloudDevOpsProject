@@ -1,6 +1,6 @@
 # ☁️ Infrastructure Provisioning with Terraform
 ## 📂 Navigation
- - VPC Configuration [main.tf](main.tf)
+ - [VPC Configuration](main.tf)
  - Security Group Configuration
  - EC2 Instance Configuration
  - Docker Deployment
