@@ -79,7 +79,7 @@ After successful deployment:
 ```bash
 docker ps
 ```
-  ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/3ec2805b2849b16cdbd8c6b17287531b9149e469/Attachments/screenshots/terraform-apply.png)
+  ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/7e4e8bea736f86152ce1e51ca74d9ff0d5c2cf7e/Attachments/screenshots/Verify-dep.png)
   
  ---
 ## 🌍 Access the Application
