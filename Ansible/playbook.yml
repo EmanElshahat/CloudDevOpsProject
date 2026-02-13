@@ -1,0 +1,9 @@
+- hosts: all
+  become: true
+
+  roles:
+    - git
+    - docker
+    - java
+    - jenkins
+
