@@ -60,18 +60,17 @@ docker run -d -p 8000:5000 emanabosamra/app:latest
 ---
 ## ▶️ Terraform Commands
 ### Initialize Terraform
-    ```bash
-     terraform init
-    ```
+```bash
+terraform init
+```
 ### Apply Configuration
-     ```bash
-     terraform apply
-     ```
-  ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/90461683d736d1ec4f90ae459c4299b96b9f5c9f/Attachments/screenshots/terraform-apply.png)
+```bash
+terraform apply
+```
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/90461683d736d1ec4f90ae459c4299b96b9f5c9f/Attachments/screenshots/terraform-apply.png)
   
   ---
-
- ## 🔍 Verify Deployment
+## 🔍 Verify Deployment
 After successful deployment:
  - SSH into the EC2 instance
  - Check running containers:
