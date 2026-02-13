@@ -67,7 +67,7 @@ docker run -d -p 8000:5000 emanabosamra/app:latest
      ```bash
      terraform apply
      ```
-  ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/3ec2805b2849b16cdbd8c6b17287531b9149e469/Attachments/screenshots/terraform-apply.png)
+  ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/90461683d736d1ec4f90ae459c4299b96b9f5c9f/Attachments/screenshots/terraform-apply.png)
   
   ---
 
