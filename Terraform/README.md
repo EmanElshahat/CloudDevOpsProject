@@ -17,7 +17,7 @@ The application is deployed on an EC2 instance and exposed to the internet throu
 
 ### ☁️ VPC
 A **custom Virtual Private Cloud (VPC)** is created to isolate the project resources.
-**Benefits:**
+- **Benefits:**
  - Network isolation
  - Controlled IP addressing
  - Secure communication
