@@ -1,0 +1,49 @@
+@Library('jenkins-shared-library') _
+
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "emanabosamra/app:latest"
+    }
+
+    stages {
+
+        stage('Build Image') {
+            steps {
+                dockerBuild(IMAGE_NAME)
+            }
+        }
+
+        stage('Scan Image') {
+            steps {
+                sh "echo Scanning image..."
+            }
+        }
+
+        stage('Push Image') {
+            steps {
+                dockerPush(IMAGE_NAME)
+            }
+        }
+
+        stage('Delete Image Locally') {
+            steps {
+                dockerRemove(IMAGE_NAME)
+            }
+        }
+
+        stage('Update Manifests') {
+            steps {
+                sh "echo Updating Kubernetes manifests..."
+            }
+        }
+
+        stage('Push Manifests') {
+            steps {
+                sh "echo Pushing manifests to GitHub..."
+            }
+        }
+    }
+}
+
