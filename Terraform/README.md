@@ -3,7 +3,7 @@
  - [VPC Configuration](main.tf)
  - [Security Group Configuration](main.tf)
  - [EC2 Instance Configuration](main.tf)
- - Docker Deployment
+ - [Docker Deployment](main.tf)
 ---
 ## 🎯 Overview
 This directory contains all Terraform configurations required to provision the infrastructure on AWS and deploy the Flask application inside a Docker container on an EC2 instance.
