@@ -49,12 +49,12 @@ An EC2 instance is provisioned to host the application.
 ---
 ## 🐳 Docker Deployment
 After provisioning, Docker is used to run the application container.
-**Deployment steps inside EC2:**
+- **Deployment steps inside EC2:**
 ```bash
 docker pull emanabosamra/app:latest
 docker run -d -p 8000:5000 emanabosamra/app:latest
 ```
-**Port mapping:**
+- **Port mapping:**
 - Container Port: `5000`
 - EC2 Public Port: `8000`
 
