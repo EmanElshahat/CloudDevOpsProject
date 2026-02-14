@@ -85,7 +85,7 @@ docker ps
 ## 🌍 Access the Application
 Open the application in your browser:
 ```bash
-http://44.222.155.171:8000
+http://100.28.225.52:8000
 ```
   ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/3ec2805b2849b16cdbd8c6b17287531b9149e469/Attachments/screenshots/http-terraform.png)
 
