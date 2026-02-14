@@ -61,9 +61,9 @@ pipeline {
                     git config user.email "jenkins@ci.com"
                     git config user.name "jenkins"
                     git add .
-                    git commit -m "Update image tag via Jenkins"
-                    git push https://\$GIT_USER:\$GIT_PASS@github.com/EmanElshahat/CloudDevOpsProject.git
-                    """
+                    git commit -m "Update image tag via Jenkins" || echo "No changes to commit"
+                    git push https://$GIT_USER:$GIT_PASS@github.com/EmanElshahat/CloudDevOpsProject.git HEAD:main
+                       """
                 }
             }
         }
