@@ -1,6 +1,6 @@
 # 🚀 Jenkins Continuous Integration Pipeline
 ## 📂 Navigation
-- [Main CI pipeline configuration](./Jenkinsfile)
+- [Main CI pipeline configuration](Jenkinsfile)
 - [Jenkins Shared Library directory](../vars)
 - [Application Docker build definition](../Docker/Dockerfile)
 - [Kubernetes deployment manifest](../K8s/deployment.yaml)
@@ -18,7 +18,7 @@ It ensures that every change pushed to GitHub triggers an automated CI workflow.
 ---
 
 ## 🛠️ Pipeline Overview
-![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/90eb96f7315d3a78aa69630804e3a406c01cffb4/Attachments/screenshots/pipline-done.png)
 
 It contains the following stages:
 
