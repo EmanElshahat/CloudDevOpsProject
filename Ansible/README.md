@@ -56,31 +56,36 @@ Run the playbook using dynamic inventory:
 ```bash
 ansible-playbook -i dynamic_inventory.py playbook.yml
 ```
-![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/41bc14a7a47849a43007548e61da09943a1cbaa5/Attachments/screenshots/playloop.png)
 
 Test connectivity:
 ```bash
 ansible web -i dynamic_inventory.py -m ping
 ```
+Go to server:
+```bash
+ssh -i terraform-key.pem ec2-user@100.28.225.52
+```
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/41bc14a7a47849a43007548e61da09943a1cbaa5/Attachments/screenshots/dynanamic.png)
 
 ---
 
 ## 🌐 Access Jenkins
 After successful deployment:
 ```bash
-http://<EC2_PUBLIC_IP>:8080
+http://100.28.225.52:8080
 ```
-![create](https://github.com/EmanElshahat/DevopsTasks/blob/08bc24ef5d8e47632a757f0db9756cb4b106c466/Jenkins/lab24/screenshots/Screenshot%202026-02-08%20021114.png)
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/41bc14a7a47849a43007548e61da09943a1cbaa5/Attachments/screenshots/jenkins-ins.png)
 
 
  ---
 
 ## ✅ Key Achievements
-✔ Infrastructure fully automated
-✔ Configuration fully automated
-✔ Dynamic inventory integration
-✔ Jenkins deployed and running
-✔ Reproducible DevOps environment
+- ✔ Infrastructure fully automated
+- ✔ Configuration fully automated
+- ✔ Dynamic inventory integration
+- ✔ Jenkins deployed and running
+- ✔ Reproducible DevOps environment
 
 ---
 
