@@ -89,13 +89,13 @@ vars/
 ├── dockerPush.groovy
 └── dockerRemove.groovy
 ```
-**🔹 dockerBuild.groovy**
+**🔹 dockerBuild.groovy:**
 Encapsulates Docker build logic.
 
-**🔹 dockerPush.groovy**
+**🔹 dockerPush.groovy:**
 Handles Docker registry push.
 
-**🔹 dockerRemove.groovy**
+**🔹 dockerRemove.groovy:**
 Removes local image after push.
 
 - This improves:
