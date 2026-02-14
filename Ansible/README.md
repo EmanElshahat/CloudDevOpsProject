@@ -81,11 +81,11 @@ http://100.28.225.52:8080
  ---
 
 ## ✅ Key Achievements
-✔ Infrastructure fully automated
-✔ Configuration fully automated
-✔ Dynamic inventory integration
-✔ Jenkins deployed and running
-✔ Reproducible DevOps environment
+- ✔ Infrastructure fully automated
+- ✔ Configuration fully automated
+- ✔ Dynamic inventory integration
+- ✔ Jenkins deployed and running
+- ✔ Reproducible DevOps environment
 
 ---
 
