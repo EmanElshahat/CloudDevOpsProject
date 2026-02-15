@@ -96,6 +96,7 @@ After successful provisioning and deployment, the application was verified by ac
 http://<EC2_PUBLIC_IP>:8000
 ```
 ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/00f3a121a93dd9f5dc8b7b1d0f4d0e1f5fa5b4b2/Attachments/screenshots/terraform-http.png)
+
 ---
 
 ## 📦 Deliverables
