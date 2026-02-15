@@ -102,7 +102,7 @@ kubectl returned authentication required error.
 ```bash
 sudo /usr/local/bin/kubectl
 ```
-- **Why**
+- **Why:**
 
 K3s installs kubeconfig with restricted permissions.
 
