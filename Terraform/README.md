@@ -95,7 +95,7 @@ After successful provisioning and deployment, the application was verified by ac
 ```bash
 http://<EC2_PUBLIC_IP>:8000
 ```
-![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/00f3a121a93dd9f5dc8b7b1d0f4d0e1f5fa5b4b2/Attachments/screenshots/http-terraform.png)
+![Verification](https://github.com/EmanElshahat/CloudDevOpsProject/blob/472ecfdba9068eaebb7e7544d3c13ec3c6fd1f5f/Attachments/screenshots/http-terraform.png)
 
 ---
 
