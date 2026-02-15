@@ -112,6 +112,7 @@ http://<EC2_PUBLIC_IP>:8000
 - Configured Key Pair for secure SSH access
 - CloudWatch CPU Alarm integration
 - Public EC2 instance ready for automation (Ansible & Jenkins)
+
 ---
 
 ## 🚀 Conclusion
