@@ -88,8 +88,14 @@ terraform plan
 ```bash
 terraform apply
 ```
-![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/00f3a121a93dd9f5dc8b7b1d0f4d0e1f5fa5b4b2/Attachments/screenshots/terraform.png)
-  
+![Apply](https://github.com/EmanElshahat/CloudDevOpsProject/blob/e141310adbda1f3a487088a774b154f3ef0a1a9e/Attachments/screenshots/terraform.png)
+
+### 🌍 Application Verification
+After successful provisioning and deployment, the application was verified by accessing the EC2 public IP:
+```bash
+http://<EC2_PUBLIC_IP>:8000
+```
+![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/00f3a121a93dd9f5dc8b7b1d0f4d0e1f5fa5b4b2/Attachments/screenshots/terraform-http.png)
 ---
 
 ## 📦 Deliverables
