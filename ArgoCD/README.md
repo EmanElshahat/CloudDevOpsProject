@@ -39,6 +39,7 @@ sudo /usr/local/bin/kubectl get nodes
 ```
 ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/0b6011fd347e81b12534e1048713c12c21f6b8eb/Attachments/screenshots/cluster-nodes.png)
 
+---
 ### 2️⃣ Install ArgoCD 
 ```bash
 sudo /usr/local/bin/kubectl create namespace argocd
@@ -52,6 +53,7 @@ sudo /usr/local/bin/kubectl get pods -n argocd
 ```
 ![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/0b6011fd347e81b12534e1048713c12c21f6b8eb/Attachments/screenshots/argocd-pods.png)
 
+---
 ### 3️⃣ Expose ArgoCD Server
 ```bash
 sudo /usr/local/bin/kubectl patch svc argocd-server -n argocd \
@@ -66,9 +68,11 @@ sudo /usr/local/bin/kubectl get svc argocd-server -n argocd
 
 Access ArgoCD:
 ```bash
-https://52.90.27.54:31396
+https://100.28.225.52:31396
 ```
+![Access](https://github.com/EmanElshahat/CloudDevOpsProject/blob/4ac3f44434d1436bc945c2f227fecd764c2c67aa/Attachments/screenshots/argocd-login.png)
 
+---
 ### 4️⃣ Retrieve Initial Admin Password
 ```bash
 sudo /usr/local/bin/kubectl -n argocd get secret argocd-initial-admin-secret \
