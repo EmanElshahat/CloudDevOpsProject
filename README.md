@@ -21,14 +21,14 @@
 
 ---
 ## 🏗️ Repository Structure
-[App](App) – Flask application source code
-[vars](vars) – Jenkins Shared Library (Groovy functions)
-[Docker](Docker) – Multi-stage Dockerfile
-[K8s](K8s) – Kubernetes deployment and service manifests
-[Terraform](Terraform) – Infrastructure as Code (VPC, Subnet, IGW, Security Groups, EC2, IAM, S3 Backend, Modules)
-[Ansible](Ansible) – EC2 configuration, Jenkins installation, roles, dynamic inventory
-[Jenkins](Jenkins) – CI pipeline definition
-[ArgoCD](ArgoCD) – ArgoCD Application manifest for GitOps deployment
+- [App](App) – Flask application source code
+- [vars](vars) – Jenkins Shared Library (Groovy functions)
+- [Docker](Docker) – Multi-stage Dockerfile
+- [K8s](K8s) – Kubernetes deployment and service manifests
+- [Terraform](Terraform) – Infrastructure as Code (VPC, Subnet, IGW, Security Groups, EC2, IAM, S3 Backend, Modules)
+- [Ansible](Ansible) – EC2 configuration, Jenkins installation, roles, dynamic inventory
+- [Jenkins](Jenkins) – CI pipeline definition
+- [ArgoCD](ArgoCD) – ArgoCD Application manifest for GitOps deployment
 
 ---
 ## 🧩 Introduction
@@ -77,29 +77,29 @@ Error:
 ```bash
 AccessDenied: iam:CreateRole
 ```
-**Solution:**
+- **Solution:**
 Verified configuration works in full-permission AWS account.
 Identified sandbox IAM restrictions.
-**Why:**
+- **Why:**
 AWS Academy sandbox limits IAM permissions like `iam:CreateRole`.
 ### 🔴 Problem 2: Trivy Not Installed
 Error:
 ```bash
 trivy: command not found
 ```
-**Solution:**
+- **Solution:**
 Installed Trivy manually on Jenkins EC2 instance.
 
-Why:
+- **Why:**
 Pipeline required Trivy binary for image scanning.
 
 ### 🔴 Problem 3: Kubernetes Authentication Issue
 kubectl returned authentication required error.
-**Solution:**
+- **Solution:**
 ```bash
 sudo /usr/local/bin/kubectl
 ```
-**Why**
+- **Why**
 Used sudo kubectl or adjusted kubeconfig permissions.
 
 
