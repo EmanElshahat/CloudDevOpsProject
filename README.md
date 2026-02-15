@@ -78,29 +78,32 @@ Error:
 AccessDenied: iam:CreateRole
 ```
 - **Solution:**
-Verified configuration works in full-permission AWS account.
-Identified sandbox IAM restrictions.
+
+  Verified configuration works in full-permission AWS account.
+  Identified sandbox IAM restrictions.
 - **Why:**
-AWS Academy sandbox limits IAM permissions like `iam:CreateRole`.
+
+  AWS Academy sandbox limits IAM permissions like `iam:CreateRole`.
 ### 🔴 Problem 2: Trivy Not Installed
 Error:
 ```bash
 trivy: command not found
 ```
 - **Solution:**
-Installed Trivy manually on Jenkins EC2 instance.
+  Installed Trivy manually on Jenkins EC2 instance.
 
 - **Why:**
-Pipeline required Trivy binary for image scanning.
+  Pipeline required Trivy binary for image scanning.
 
 ### 🔴 Problem 3: Kubernetes Authentication Issue
 kubectl returned authentication required error.
 - **Solution:**
+
 ```bash
 sudo /usr/local/bin/kubectl
 ```
 - **Why**
-Used sudo kubectl or adjusted kubeconfig permissions.
 
+K3s installs kubeconfig with restricted permissions.
 
 
