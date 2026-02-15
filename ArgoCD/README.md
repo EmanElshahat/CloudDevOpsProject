@@ -116,7 +116,7 @@ The application is configured with:
 - automated: `sync`
 - prune: `true`
 - selfHeal: `true`
-![create](https://github.com/EmanElshahat/CloudDevOpsProject/blob/0b6011fd347e81b12534e1048713c12c21f6b8eb/Attachments/screenshots/apply-argocd-app.png)
+![Sync](https://github.com/EmanElshahat/CloudDevOpsProject/blob/6d134f6e4c01a5e16509f8d3c4c4e91279f11004/Attachments/screenshots/syne-argocd.png)
 
 
 ---
