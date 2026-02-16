@@ -12,7 +12,7 @@
 
 ---
 ## 🏗️ Infrastructure Architecture
-
+![Pipeline](https://github.com/EmanElshahat/CloudDevOpsProject/blob/c3acc03e601a9c2a673c336962f20694bae5124f/Attachments/diagram/Infrastructure%20Architecture.gif)
 
 ---
 
