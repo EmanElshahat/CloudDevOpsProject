@@ -17,7 +17,7 @@
 ---
 
 ## 🔄 CI/CD Pipeline Flow
-![Pipeline](https://github.com/EmanElshahat/CloudDevOpsProject/blob/d7c7f7baa455dab0ecef69efe32ddf7c8620994f/Attachments/diagram/CICD%20Pipeline.gif)
+![Pipeline](https://github.com/EmanElshahat/CloudDevOpsProject/blob/c642c8ab86e0add7161d92a90c27bdfc40e8a3e9/Attachments/diagram/CICD%20Pipeline.gif)
 
 ---
 ## 🏗️ Repository Structure
