@@ -70,39 +70,72 @@ This project showcases real-world DevOps practices including Infrastructure as C
   
 ---
 
-## 🧠 Problems Faced
+## 🚀 Step-by-Step Deployment
 
-### 🔴 Problem 1: IAM Role Creation Failed (AWS Academy Sandbox)
-Error:
-```bash
-AccessDenied: iam:CreateRole
-```
-- **Solution:**
+### 1. Application Development & Repository Setup
+- Cloning the Flask application from the GitHub repository.
 
-  Verified configuration works in full-permission AWS account.
-  Identified sandbox IAM restrictions.
-- **Why:**
+### 2. Dockerizing the Application
+- Creating a multi-stage Dockerfile for the Flask application.
+- Building the Docker image locally for testing.
+- Running the container on port `5000` and exposing it via `8000` on EC2.
+- 
+### 3. Provisioning AWS Infrastructure with Terraform
+- Using Terraform Modules (Network & Server) to provision:
+  - VPC ,Public Subnet ,Internet Gateway (IGW) ,Internet Gateway (IGW) ,Security Groups
+  - EC2 instance for Jenkins & CI/CD
+  - IAM Role for EC2 (CloudWatch access)
+  - S3 backend for remote Terraform state storage
+  - S3 backend for remote Terraform state storage
+- Terraform state is stored remotely in an S3 bucket for better state management and collaboration.
 
-  AWS Academy sandbox limits IAM permissions like `iam:CreateRole`.
-### 🔴 Problem 2: Trivy Not Installed
-Error:
-```bash
-trivy: command not found
-```
-- **Solution:**
-  Installed Trivy manually on Jenkins EC2 instance.
+### 4. Configuring EC2 Instance with Ansible
+- Using Ansible with:
+  - Dynamic Inventory (based on Terraform outputs)
+  - Roles for modular configuration
+- Roles for modular configuration
+  - Git
+  - Docker
+  - Java
+  - Jenkins
+- Ensuring Jenkins is properly installed and accessible via public IP.
 
-- **Why:**
-  Pipeline required Trivy binary for image scanning.
+### 5. Setting Up Continuous Integration with Jenkins
+- Creating a declarative Jenkins pipeline using:
+  - [Shared Library](vars)
+  - Multiple CI stages:
+    - Build Image
+    - Scan Image (Trivy Security Scan)
+    - Push Image (Docker Hub)
+    - Delete Image Locally
+    - Update Kubernetes Manifests
+    - Update Kubernetes Manifests
+- Integrating:
+  - Docker Hub credentials
+  - GitHub credentials
+  - Trivy vulnerability scanner
 
-### 🔴 Problem 3: Kubernetes Authentication Issue
-kubectl returned authentication required error.
-- **Solution:**
+### 6. Continuous Deployment with ArgoCD (GitOps)
+- Installing k3s Kubernetes cluster on EC2.
+- Deploying ArgoCD inside the cluster.
+- Creating an ArgoCD Application manifest to:
+  - Watch the GitHub repository
+  - Detect changes in Kubernetes manifests
+  - Automatically sync updates to the cluster
+  - Deploy updated Docker images to Kubernetes pods
+- User traffic flows:
+  - Internet → Public IP → k3s → Pod
 
-```bash
-sudo /usr/local/bin/kubectl
-```
-- **Why:**
+## 🎯 Conclusion
+### This project demonstrates a complete end-to-end DevOps pipeline
+- Infrastructure as Code
+- Configuration Management
+- Continuous Integration
+- Container Security Scanning
+- GitOps-based Continuous Deployment
+- Cloud-native container orchestration
+By integrating Terraform, Ansible, Jenkins, Docker, Trivy, Kubernetes, and ArgoCD, this project delivers a fully automated, production-style deployment workflow on AWS.
+It showcases real-world DevOps engineering practices and provides a scalable foundation for future cloud-native applications.
 
 K3s installs kubeconfig with restricted permissions.
 
