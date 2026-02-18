@@ -134,5 +134,5 @@ This project showcases real-world DevOps practices including Infrastructure as C
 - Container Security Scanning
 - GitOps-based Continuous Deployment
 - Cloud-native container orchestration
-### By integrating Terraform, Ansible, Jenkins, Docker, Trivy, Kubernetes, and ArgoCD, this project delivers a fully automated, production-style deployment workflow on AWS.
+By integrating Terraform, Ansible, Jenkins, Docker, Trivy, Kubernetes, and ArgoCD, this project delivers a fully automated, production-style deployment workflow on AWS.
 ### It showcases real-world DevOps engineering practices and provides a scalable foundation for future cloud-native applications.
